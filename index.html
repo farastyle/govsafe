@@ -3,30 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Início - GovSafe</title>
+    <title>GovSafe - Segurança Digital para o Setor Público</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>GovSafe</h1>
-        <p>Segurança Digital para o Setor Público</p>
-    </header>
-    <nav>
-        <a href="index.html">Início</a>
-        <a href="sobre.html">Sobre</a>
-        <a href="o-problema.html">O Problema</a>
-        <a href="solucoes.html">Soluções</a>
-        <a href="contato.html">Contato</a>
-    </nav>
-    <main>
-        <h2>Bem-vindo ao GovSafe</h2>
-        
-<p>Bem-vindo ao GovSafe. Este site tem como objetivo conscientizar gestores públicos e profissionais de TI sobre os riscos de segurança digital, especialmente relacionados a sistemas desatualizados, VNEs (Vulnerabilidades Não Corrigidas) e gestão inadequada de contratos de tecnologia.</p>
-<p>Aqui você encontrará informações, soluções e boas práticas para proteger dados, serviços e infraestrutura digital governamental.</p>
 
-    </main>
-    <footer>
-        <p>&copy; 2025 GovSafe - Rafael Maia de Oliveira</p>
-    </footer>
+<header>
+    <h1>GovSafe</h1>
+    <p>Segurança Digital para o Setor Público</p>
+</header>
+
+<nav>
+    <a href="index.html">Início</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="o-problema.html">O Problema</a>
+    <a href="solucoes.html">Soluções</a>
+    <a href="contato.html">Contato</a>
+</nav>
+
+<main>
+
+<h2>Bem-vindo ao GovSafe</h2>
+
+<p>O <strong>GovSafe</strong> é uma plataforma educativa, desenvolvida para conscientizar e capacitar gestores públicos, profissionais de TI e servidores sobre os riscos cibernéticos que ameaçam diariamente a integridade, disponibilidade e confidencialidade dos dados públicos. Este projeto surge da percepção crítica sobre as inúmeras fragilidades que ainda existem na administração pública, especialmente na gestão de vulnerabilidades, atualização de sistemas e segurança de endpoints.</p>
+
+<p>Conforme destacado por <strong>William Stallings (2014)</strong> em <em>Segurança em Redes</em>, “<em>os ataques modernos exploram não apenas falhas de software, mas também fraquezas em protocolos, hardware e, principalmente, na gestão de processos e controles.</em>” A negligência em manter sistemas, aplicações e infraestrutura atualizados e devidamente gerenciados abre portas para ameaças cada vez mais sofisticadas.</p>
+
+<p>Atualmente, além dos riscos já conhecidos no nível de software — como vulnerabilidades em sistemas legados, falhas em aplicações web e dependências tecnológicas obsoletas — enfrentamos também ameaças cada vez mais críticas no <strong>nível de hardware</strong>. Um exemplo recente é a vulnerabilidade <strong>Branch Privilege Injection (CVE-2024-45332)</strong>, documentada pela <a href="https://nvd.nist.gov/vuln/detail/CVE-2024-45332" target="_blank">National Vulnerability Database</a>. Esta falha permite o vazamento de informações sensíveis diretamente da memória protegida dos processadores Intel, comprometendo até ambientes considerados isolados ou protegidos por mecanismos tradicionais.</p>
+
+<h3>🔍 Riscos muito além do nosso controle direto</h3>
+
+<p>O problema se agrava quando observamos que grande parte dos órgãos públicos não possui ferramentas adequadas para <strong>gerenciar seus próprios endpoints</strong>. Isso significa que, na prática, muitos não sabem:</p>
+<ul>
+    <li>Quais máquinas estão desatualizadas;</li>
+    <li>Quais possuem firmwares ou sistemas operacionais vulneráveis;</li>
+    <li>Quais endpoints estão executando softwares obsoletos, expostos a falhas críticas;</li>
+    <li>Quais estão ativamente comprometidos por agentes maliciosos, muitas vezes sem sequer apresentar sintomas visíveis.</li>
+</ul>
+
+<p>Como destaca <strong>Jason Andress (2015)</strong> em <em>Fundamentos de Segurança da Informação</em>: “<em>Se você não sabe o que tem, não sabe o que proteger, e se não sabe o que proteger, não sabe o que está sendo atacado.</em>”</p>
+
+<h3>📌 Casos reais demonstram a gravidade</h3>
+
+<p>O cenário brasileiro não é isento. Diversos episódios de ataques cibernéticos contra órgãos públicos reforçam a fragilidade das estruturas. Exemplos incluem:</p>
+<ul>
+    <li><strong>STJ (Superior Tribunal de Justiça) — 2020:</strong> Ataque de ransomware que paralisou todos os sistemas, impedindo julgamentos e acessos por dias.</li>
+    <li><strong>Ministério da Saúde — 2021:</strong> Vazamento massivo de dados, incluindo informações de cidadãos vinculadas ao ConecteSUS.</li>
+    <li><strong>Prefeituras e câmaras municipais:</strong> Ataques de ransomware e sequestro de dados se tornaram rotina, com exigências de pagamentos para desbloqueio dos sistemas.</li>
+</ul>
+
+<p>Além dos servidores e sistemas centrais, existe um risco oculto, mas extremamente crítico: os <strong>endpoints</strong> — estações de trabalho, notebooks e dispositivos usados diariamente pelos servidores públicos. Estes, muitas vezes esquecidos nos planos de segurança, são porta de entrada para ameaças que, uma vez infiltradas, comprometem todo o ecossistema digital.</p>
+
+<p><strong>Harrington (2016)</strong> reforça: “<em>A segurança da informação é tão forte quanto seu elo mais fraco. Na maioria dos ambientes, este elo são os endpoints mal gerenciados e mal protegidos.</em>”</p>
+
+<h3>💡 Por que a segurança digital no setor público é crítica?</h3>
+
+<ul>
+    <li>⚠️ <strong>Dados sensíveis:</strong> Informações de cidadãos, processos judiciais, dados fiscais e documentos estratégicos estão em risco.</li>
+    <li>⚠️ <strong>Infraestrutura crítica:</strong> Sistemas que sustentam serviços de saúde, educação, segurança pública e administração tributária podem ser interrompidos.</li>
+    <li>⚠️ <strong>Dependência de tecnologias legadas:</strong> Muitos sistemas foram desenvolvidos sob plataformas que não recebem mais suporte, e sua atualização é vista como onerosa — embora a não atualização custe ainda mais caro.</li>
+    <li>⚠️ <strong>Ameaças modernas:</strong> Além de malware convencional, enfrentamos ataques de estado-nação, ransomware como serviço (RaaS) e até exploração de vulnerabilidades em hardware, como demonstrado pela CVE-2024-45332.</li>
+</ul>
+
+<h3>🛑 Vulnerabilidades que podem — e precisam — ser corrigidas</h3>
+
+<p>Embora algumas ameaças, como falhas no design de hardware, estejam além do nosso controle imediato, <strong>a grande maioria das vulnerabilidades exploradas em ataques cibernéticos contra governos são corrigíveis</strong>. As melhores práticas incluem:</p>
+<ul>
+    <li>✅ Gestão contínua de patches e atualizações (<a href="https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-40r3.pdf" target="_blank">NIST SP 800-40 Rev.3</a>).</li>
+    <li>✅ Inventário e monitoramento de todos os ativos (hardware e software).</li>
+    <li>✅ Adoção de plataformas de gestão de endpoints robustas, como <strong>Tanium</strong>, capaz de oferecer visibilidade em tempo real, mitigação e remediação rápida.</li>
+    <li>✅ Implementação de controles baseados em frameworks como <strong>OWASP</strong> e <strong>MITRE ATT&CK</strong>.</li>
+</ul>
+
+<h3>🚀 O que você encontrará no GovSafe</h3>
+
+<ul>
+    <li>📖 <strong>Na seção “O Problema”:</strong> Uma análise detalhada das maiores fragilidades presentes hoje nos ambientes governamentais, incluindo vulnerabilidades de software, hardware, falhas de gestão, falta de controle sobre endpoints e dependência de tecnologias ultrapassadas.</li>
+    <li>🛠️ <strong>Na seção “Soluções”:</strong> Diretrizes, boas práticas e ferramentas — de baixo custo e de nível empresarial — que podem ser adotadas para transformar a segurança digital em órgãos públicos.</li>
+    <li>📚 Conteúdos baseados nas melhores referências de segurança da informação, como <em>Stallings (2014)</em>, <em>Andress (2015)</em>, <em>Harrington (2016)</em>, <em>Grimes (2017)</em>, <em>Kaplan & Reed (2020)</em>, entre outros.</li>
+</ul>
+
+<h3>🎯 Nosso compromisso</h3>
+
+<p>O GovSafe tem como missão não apenas informar, mas transformar a mentalidade de segurança digital no setor público. Acreditamos que o conhecimento é a primeira e mais poderosa defesa contra as ameaças cibernéticas que desafiam diariamente a segurança da informação no Brasil e no mundo.</p>
+
+<h3>🚀 Comece agora</h3>
+<p>Explore nosso site e entenda como proteger seu órgão, sua instituição e, consequentemente, os dados de milhões de cidadãos.</p>
+
+</main>
+
+<footer>
+    <p>&copy; 2025 GovSafe - Rafael Maia de Oliveira</p>
+</footer>
+
 </body>
 </html>
