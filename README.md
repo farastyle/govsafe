@@ -2,7 +2,7 @@
 
 🔐 **GovSafe — Segurança Digital para Governos**
 
-Projeto de extensão universitária com foco na conscientização sobre segurança digital no setor público.
+Projeto de extensão universitária com foco na conscientização sobre Segurança Digital para o Setor Público.
 
 ## 🌐 Acesse o site:
 👉 [https://farastyle.github.io/govsafe](https://farastyle.github.io/govsafe) *(Substituir quando estiver no ar)*
