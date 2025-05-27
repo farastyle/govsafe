@@ -1,37 +1,78 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soluções - GovSafe</title>
+    <title>GovSafe - Soluções</title>
     <link rel="stylesheet" href="css/style.css">
+    <script>
+        function toggle(id) {
+            var x = document.getElementById(id);
+            if (x.classList.contains('hidden')) {
+                x.classList.remove('hidden');
+            } else {
+                x.classList.add('hidden');
+            }
+        }
+    </script>
 </head>
 <body>
-    <header>
-        <h1>GovSafe</h1>
-        <p>Segurança Digital para o Setor Público</p>
-    </header>
-    <nav>
-        <a href="index.html">Início</a>
-        <a href="sobre.html">Sobre</a>
-        <a href="o-problema.html">O Problema</a>
-        <a href="solucoes.html">Soluções</a>
-        <a href="contato.html">Contato</a>
-    </nav>
-    <main>
-        <h2>Soluções e Boas Práticas</h2>
-        
-<ul>
-    <li>Manter sistemas operacionais e softwares atualizados.</li>
-    <li>Planejar a migração de frameworks obsoletos.</li>
-    <li>Implantar políticas de segurança da informação.</li>
-    <li>Realizar gestão de vulnerabilidades e aplicação contínua de patches.</li>
-    <li>Treinar gestores e servidores sobre riscos digitais.</li>
-</ul>
+<header>
+    <h1>GovSafe</h1>
+    <p>Segurança Digital no Setor Público</p>
+</header>
+<nav>
+    <a href="index.html">Início</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="o-problema.html">O Problema</a>
+    <a href="solucoes.html">Soluções</a>
+    <a href="contato.html">Contato</a>
+</nav>
+<main>
+    <h2>Soluções — Como Proteger Governos na Era dos Ataques Digitais</h2>
+    <button onclick="toggle('camada1')">🔍 Gestão de Vulnerabilidades</button>
+    <div id="camada1" class="hidden">
+        <p>✔️ Desafios: falta de inventário, vulnerabilidades não corrigidas, sistemas legados.</p>
+        <p>✔️ Soluções: Tanium, Nessus, Qualys, ManageEngine.</p>
+        <p>✔️ Práticas: Inventário, CVE, gestão de patches (NIST SP 800-40).</p>
+    </div>
 
-    </main>
-    <footer>
-        <p>&copy; 2025 GovSafe - Rafael Maia de Oliveira</p>
-    </footer>
+    <button onclick="toggle('camada2')">🛡️ Proteção Perimetral</button>
+    <div id="camada2" class="hidden">
+        <p>✔️ Soluções: WAF, IPS, SASE (Cato Networks).</p>
+        <p>✔️ Práticas: Bloqueio de OWASP Top 10, DRDoS, scanners.</p>
+    </div>
+
+    <button onclick="toggle('camada3')">🔐 Zero Trust (ZTNA)</button>
+    <div id="camada3" class="hidden">
+        <p>✔️ Soluções: Cato ZTNA, ZScaler, Prisma, Cisco Umbrella.</p>
+        <p>✔️ Práticas: Microsegmentação, autenticação contínua.</p>
+    </div>
+
+    <button onclick="toggle('camada4')">🖥️ Endpoint Protection (EDR/XDR)</button>
+    <div id="camada4" class="hidden">
+        <p>✔️ Soluções: SentinelOne, CrowdStrike, Tanium, Microsoft Defender.</p>
+        <p>✔️ Práticas: Hardening, controle de integridade, detecção de ransomwares.</p>
+    </div>
+
+    <button onclick="toggle('camada5')">☁️ Segurança na Nuvem e SD-WAN</button>
+    <div id="camada5" class="hidden">
+        <p>✔️ Soluções: Cato Networks (SASE), Prisma Cloud, AWS Security Hub.</p>
+        <p>✔️ Práticas: CSPM, inspeção de tráfego SaaS, Zero Trust multicloud.</p>
+    </div>
+
+    <button onclick="toggle('camada6')">🛰️ Monitoramento e Resposta (SOC/SIEM)</button>
+    <div id="camada6" class="hidden">
+        <p>✔️ Soluções: Splunk, IBM QRadar, Elastic SIEM, Microsoft Sentinel.</p>
+        <p>✔️ Práticas: Detecção de ameaças, SOAR, MITRE ATT&CK.</p>
+    </div>
+
+    <h3>Conclusão</h3>
+    <p>O caminho está claro. As soluções existem. O GovSafe mostra que sim, é possível proteger governos — e a sociedade — da nova era dos ataques.</p>
+</main>
+<footer>
+    <p>&copy; 2025 GovSafe - Rafael Maia de Oliveira</p>
+</footer>
 </body>
 </html>
